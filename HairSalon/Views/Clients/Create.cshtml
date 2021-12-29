@@ -4,10 +4,14 @@
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.FirstName)
+  @Html.TextBoxFor(model => model.FirstName)
   <br>
   @Html.LabelFor(model => model.LastName)
+  @Html.TextBoxFor(model => model.LastName)
   <br>
   @Html.LabelFor(model => model.ColorFormula)
+  @Html.TextBoxFor(model => model.ColorFormula)
+  <br>
   <input type="submit" value="Add new client" />
 }
 <p>@Html.ActionLink("Show all clients", "Index")</p>
