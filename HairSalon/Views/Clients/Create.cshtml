@@ -3,15 +3,15 @@
 <h3>Add a new client:</h3>
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.FirstName)
-  @Html.TextBoxFor(model => model.FirstName)
-  <br>
-  @Html.LabelFor(model => model.LastName)
-  @Html.TextBoxFor(model => model.LastName)
-  <br>
+  <p>@Html.LabelFor(model => model.FirstName)
+  @Html.TextBoxFor(model => model.FirstName)</p>
+  
+  <p>@Html.LabelFor(model => model.LastName)
+  @Html.TextBoxFor(model => model.LastName)</p>
+  
   @Html.LabelFor(model => model.ColorFormula)
   @Html.TextBoxFor(model => model.ColorFormula)
-  <br>
-  <input type="submit" value="Add new client" />
+  
+  <p><input type="submit" value="Add new client" /></p>
 }
 <p>@Html.ActionLink("Show all clients", "Index")</p>

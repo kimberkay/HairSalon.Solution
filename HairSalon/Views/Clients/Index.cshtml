@@ -9,7 +9,8 @@
 
 @foreach (Client client in Model)
 {
-  <li>@client.FirstName @client.LastName Color: @client.ColorFormula</li>
+  <li>@client.FirstName @client.LastName 
+    <p>   Color Formula Notes: @client.ColorFormula</p></li>
 }
 <br>
 <p>@Html.ActionLink("Add new client", "Create")</p>

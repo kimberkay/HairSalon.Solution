@@ -8,8 +8,5 @@ namespace HairSalon.Models
 
     public string ColorFormula { get; set; }
 
-    public DateTime LastAppointment { get; set; }
-
-    public DateTime NextAppointment { get; set; }
   }
 }
