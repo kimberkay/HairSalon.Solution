@@ -2,21 +2,21 @@
 
 <h2>Edit Client</h2>
 
-<h4>@Html.DisplayFor(model => model.FirstName, model.LastName)</h4>
+<h4>@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName) </h4>
 
 @using (Html.BeginForm())
 {
   @Html.HiddenFor(model => model.ClientId)
 
   <p>@Html.LabelFor(model => model.FirstName)
-  @Html.LabelFor(model => model.FirstName)</p>
+  @Html.EditorFor(model => model.FirstName)</p>
 
   <p>@Html.LabelFor(model => model.LastName)
-  @Html.LabelFor(model => model.LastName)</p>
+  @Html.EditorFor(model => model.LastName)</p>
 
-  <p>@Html.LabelFor(model => model.LasttName)
-  @Html.LabelFor(model => model.LastName)</p>
-  <p><input type="submit" value="Save" /> </p
+  <p>@Html.LabelFor(model => model.LastName)
+  @Html.EditorFor(model => model.LastName)</p>
+  <p><input type="submit" value="Save" /></p>
 }
 
 <p>@Html.ActionLink("Back to client list", "Index")</p>
