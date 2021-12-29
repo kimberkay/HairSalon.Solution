@@ -6,6 +6,6 @@ namespace HairSalon.Models
     public string FirstName { get; set; }
     public string LastName { get; set; }
 
-    public string HairColorFormula { get; set; }
+    public string ColorFormula { get; set; }
   }
 }
