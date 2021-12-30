@@ -3,6 +3,9 @@
 <h3>Add a new client:</h3>
 @using (Html.BeginForm())
 {
+  <p>@Html.LabelFor(model => model.Stylist)
+     @Html.DropDownList("StylistId")</p>
+
   <p>@Html.LabelFor(model => model.FirstName)
   @Html.TextBoxFor(model => model.FirstName)</p>
   
