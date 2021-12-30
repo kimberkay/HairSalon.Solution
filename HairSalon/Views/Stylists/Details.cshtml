@@ -5,11 +5,6 @@ HairSalon.Models.Client
 <h2>Stylist Details:</h2>
 <hr />
 <h3>@Html.DisplayFor(model => model.StylistFirstName) @Html.DisplayFor(model => model.StylistLastName)</h3>
-<h2>Client List:</h2>
-@foreach (Client client in Model)
-{
-  <li>@Html.ActionLink($"{client.FirstName} {client.LastName}", "Details", new { id = client.ClientId }) | @client.Stylist.StylistFirstName @client.Stylist.StylistLastName </li>
-}
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete Category", "Delete", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to list", "Index")</p>
