@@ -8,5 +8,9 @@ namespace HairSalon.Models
 
     public string ColorFormula { get; set; }
 
+    public int StylistId { get; set; }
+
+    public virtual Stylist Stylist { get; set; }
+
   }
 }
