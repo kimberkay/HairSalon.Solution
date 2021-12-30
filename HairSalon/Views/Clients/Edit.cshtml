@@ -16,6 +16,13 @@
 
   <p>@Html.LabelFor(model => model.LastName)
   @Html.EditorFor(model => model.LastName)</p>
+
+  <p>@Html.LabelFor(model => model.ColorFormula)
+  @Html.EditorFor(model => model.ColorFormula)</p>
+
+  <p>@Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId")</p>
+
   <p><input type="submit" value="Save" /></p>
 }
 
