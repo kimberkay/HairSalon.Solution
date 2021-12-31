@@ -14,6 +14,7 @@
 * _GitHub_
 * Entity Framework Core
 * Pomelo
+* MySql
 
 
 ## Description
