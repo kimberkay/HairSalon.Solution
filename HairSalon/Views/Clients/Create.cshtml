@@ -4,16 +4,16 @@
 @using (Html.BeginForm())
 {
 
-  <p>@Html.LabelFor(model => model.FirstName)
-  @Html.TextBoxFor(model => model.FirstName)</p>
+  <p>@Html.LabelFor(model => model.FirstName, new { required = "required" } )
+  @Html.TextBoxFor(model => model.FirstName, new { required = "required" } )</p>
   
-  <p>@Html.LabelFor(model => model.LastName)
-  @Html.TextBoxFor(model => model.LastName)</p>
+  <p>@Html.LabelFor(model => model.LastName, new { required = "required" } )
+  @Html.TextBoxFor(model => model.LastName, new { required = "required" } )</p>
   
   @Html.LabelFor(model => model.ColorFormula)
   @Html.TextBoxFor(model => model.ColorFormula)
 
-  <p>@Html.LabelFor(model => model.Stylist)
+  <p>@Html.LabelFor(model => model.Stylist, new { required = "required" } )
   @Html.DropDownList("StylistId")</p>
   
   <p><input type="submit" value="Add new client" class="btn btn-default" /></p>

@@ -4,11 +4,11 @@
 
 @using(Html.BeginForm())
 {
-  <p>@Html.LabelFor(model => model.StylistFirstName)
-  @Html.TextBoxFor(model => model.StylistFirstName)</p>
+  <p>@Html.LabelFor(model => model.StylistFirstName, new { required = "required" } )
+  @Html.TextBoxFor(model => model.StylistFirstName, new { required = "required" } )</p>
 
-  <p>@Html.LabelFor(model => model.StylistLastName)
-  @Html.TextBoxFor(model => model.StylistLastName)</p>
+  <p>@Html.LabelFor(model => model.StylistLastName, new { required = "required" } )
+  @Html.TextBoxFor(model => model.StylistLastName, new { required = "required" } )</p>
 
   <input type="submit" value="Add new stylist" />
 }
